@@ -1,4 +1,4 @@
-
+/* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -10,7 +10,7 @@ body {
 header {
     background-color: black;
     padding: 10px 20px;
-    color:  #ffd700;
+    color: #ffd700;
     text-align: center;
 }
 
@@ -41,10 +41,9 @@ header {
 }
 
 .navbar a.active, .navbar a:hover {
-    background-color:  #ffd700;
+    background-color: #ffd700;
     color: black;
 }
-
 
 #contact {
     max-width: 800px;
@@ -88,7 +87,6 @@ header {
     text-decoration: underline;
 }
 
-
 .map-placeholder {
     margin-top: 30px;
     text-align: center;
@@ -99,11 +97,86 @@ header {
     color: #666;
 }
 
-
 footer {
     text-align: center;
     background-color: black;
     color: white;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+/* Responsive styles */
+
+/* For tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    #contact {
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 15px;
+    }
+
+    .contact-details {
+        font-size: 14px;
+    }
+
+    .map-placeholder {
+        padding: 30px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+/* For mobile phones and smaller devices (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5px;
+    }
+
+    .navbar a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    #contact {
+        max-width: 95%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-details {
+        font-size: 12px;
+    }
+
+    .map-placeholder {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
 }
