@@ -4,7 +4,7 @@ var fullName= firstName + "" + lastName;
 console.log(fullName);
 
 var school="Digital School";
-console.log('Hello from ${school}');
+console.log(`Hello from ${school}`);
 
 var age=24;
 console.log(age >=18 &&age<=65);
